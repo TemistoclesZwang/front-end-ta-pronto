@@ -7,7 +7,7 @@ export function GenQrCode() {
     // .qr code verifica se é pagamento ou  acompanhar pedido
     <main className="containerQrCode">
       <QRCode
-        value="https://apitapronto.onrender/pedidos/true"
+        value="https://front-end-ta-pronto.vercel.app/pedidos/true"
         bgColor="rgb(231, 231, 201)"
         fgColor="rgb(21, 39, 33)"
       />
