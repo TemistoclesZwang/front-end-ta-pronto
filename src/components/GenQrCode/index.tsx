@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import QRCode from "qrcode.react";
 import "./index.css";
 

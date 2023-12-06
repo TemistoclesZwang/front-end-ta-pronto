@@ -1,12 +1,9 @@
 import  { useState } from "react";
 import { GrayscaleFilterImg } from "../../components/GrayscaleFilterImg";
 import { Countdown } from "../../components/CountDown";
-import { useOrderListContext } from "../../context/OrderListContext";
 import { showNotification } from "../../components/SendNotification";
 import { useParams } from "react-router-dom";
-import { useOrderList } from "../../hooks/useOrderList";
 import "./index.css";
-import { useUniqueOrderNames } from "../../hooks/useUniqueName";
 import { BasePage } from "../../components/BasePage";
 import { useRenderUniqueOrdersNames } from "../../hooks/useRenderUniqueOrdersNames";
 

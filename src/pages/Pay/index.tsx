@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useOrderListContext } from "../../context/OrderListContext";
 import { GenQrCode } from "../../components/GenQrCode";
 import "./index.css";
-import { CounterBtn } from "../Menu/CounterBtn";
-import { OrderCounter } from "../Menu/OrderCounter";
-import { useUniqueOrderNames } from "../../hooks/useUniqueName";
 import { BasePage } from "../../components/BasePage";
 import { useRenderUniqueOrdersNames } from "../../hooks/useRenderUniqueOrdersNames";
 
@@ -13,7 +10,6 @@ export function Pay() {
   const storedEmail = localStorage.getItem("storedEmail") || "No email found";
   const [redirect, setRedirect] = useState(false);
   const { orders } = useOrderListContext();
-  const uniqueNames = useUniqueOrderNames();
   const { uniqueOrdersList } = useRenderUniqueOrdersNames(true);
 
 

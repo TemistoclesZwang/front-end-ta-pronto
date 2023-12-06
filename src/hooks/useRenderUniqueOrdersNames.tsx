@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useOrderListContext } from '../context/OrderListContext';
-// import { Order } from 'seu/caminho/de/interface'; // Certifique-se de importar corretamente a interface Order
-import { OrderCounter } from '../pages/Menu/OrderCounter';
 import { CounterBtn } from '../pages/Menu/CounterBtn';
 
 interface UseUniqueNamesResult {
