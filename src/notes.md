@@ -47,3 +47,6 @@ recarregar dos menus sobre demanda
 - [ ] retirar todas as funções de dentro dos componentes
   - [ ] colocar em pasta separada para hooks personalizados
   - [ ] criar um hook para cada método http
+
+
+qrcode,cadastro, e logout 
