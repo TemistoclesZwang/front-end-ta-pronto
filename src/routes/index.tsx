@@ -30,8 +30,8 @@ export const MyRouter = (
       <Route path="/register/*" element={<RegistrationPage />} />
       <Route path="/pedidos/:parametro" element={<Pedidos />} />
       <Route path="/pagamento/*" element={<Pay />} />
-      <Route path="*" element={<NotFound />} />
       <Route path="/about/*" element={<ProtectedRoute element={<About />} />} />
+      <Route path="*" element={<NotFound />} />
       <Route path="/cardapio/*" element={<ProtectedRoute element={<Menu />} />}
       />
     </Routes>

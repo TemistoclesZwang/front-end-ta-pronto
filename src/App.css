@@ -9,6 +9,7 @@
 }
 
 
+
 .icons{
   color:rgb(9, 37, 11);
   /* background-color: rgb(9, 37, 11); */
@@ -32,6 +33,8 @@
 .btn-nav{
   background-color:cadetblue;
   padding: .5rem;
+  border-radius: .5rem;
+
 }
 
 
@@ -67,7 +70,10 @@
 
 @media screen and (min-width: 790px) {
   /*, GRANDE */
-
+  .btn-nav{
+    border-radius: 1rem;
+  
+  }
   .links{
     justify-content: space-between;
 

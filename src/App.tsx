@@ -4,58 +4,52 @@ import { MyRouter } from "./routes";
 import {
   faCartShopping,
   faRectangleList,
-  faSliders,
+  faSignOut,
   faUtensils,
 } from "@fortawesome/free-solid-svg-icons";
 import { BtnNavBar } from "./components/BtnNavBar";
 import { useAuth } from "./context/AuthContext";
 import { OrderListContextProvider } from "./context/OrderListContext";
 
-
 function App() {
-  const { isLoggedIn } = useAuth(); 
+  const { isLoggedIn } = useAuth();
 
   return (
     <OrderListContextProvider>
       <BrowserRouter>
         {isLoggedIn && (
-        <nav className="navbar">
-            <ul className="links">
-              <div className="left">
-
-                <BtnNavBar to="/pedidos/false" 
-                icon={faUtensils} 
-                text="Pedidos" />
-
-                <BtnNavBar
-                  to="/cardapio"
-                  icon={faRectangleList}
-                  text="Cardápio"
-                />
-                <BtnNavBar
-                  to="/pagamento"
-                  icon={faCartShopping}
-                  text="Pagamento"
-                />
-              </div>
-              <div className="right">
-                {/* <BtnNavBar
-                  to="/LoginPage"
-                  icon={faBell}
-                  text="Notificações"
-                /> */}
-                <BtnNavBar
-                  to="/register"
-                  icon={faSliders}
-                  text="Configurações"
-                />
-              </div>
-            </ul>
-          </nav>
+            <nav className="navbar">
+              <ul className="links">
+                <div className="left">
+                  <BtnNavBar
+                    to="/pedidos/false"
+                    icon={faUtensils}
+                    text="Pedidos"
+                  />
+                  <BtnNavBar
+                    to="/cardapio"
+                    icon={faRectangleList}
+                    text="Cardápio"
+                  />
+                  <BtnNavBar
+                    to="/pagamento"
+                    icon={faCartShopping}
+                    text="Pagamento"
+                  />
+                </div>
+                <div className="right">
+                  <BtnNavBar
+                    to="/"
+                    icon={faSignOut}
+                    text="Sair"
+                  />
+                </div>
+              </ul>
+            </nav>
         )}
         {MyRouter}
       </BrowserRouter>
-      </OrderListContextProvider>
+    </OrderListContextProvider>
   );
 }
 
